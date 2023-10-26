@@ -1,0 +1,16 @@
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+     output: process.stdout
+});
+
+rl.question("Enter list of num's separated by comma: ", function(input) {
+      const arr = input.split(',').map(Number);
+
+    arr.sort(function(a, b) {
+        return b - a;
+});
+
+    console.log("Sorted Array in Descending Order: ", arr);
+    rl.close();
+});

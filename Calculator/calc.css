@@ -1,0 +1,41 @@
+
+ .calculator{
+    width: 270px;
+   margin: 140px auto;
+    padding: 20px;
+    background-color:#ebeaea;
+    border: 3px inset #656565;
+    border-radius: 5px;}
+
+#display{
+    width: 65%;
+    height:40px;
+     font-size: 24px;
+     margin-left: 5px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #191818;
+    color: white;
+    cursor: pointer;
+}
+
+/* Styling for the operator buttons */
+.operator {
+    background-color: #636363;
+}
+.AC{
+    background-color: rgb(2, 189, 158);
+}
+/* Styling for the "=" button */
+.equal-button {
+    background-color: #ff8c00;
+}
