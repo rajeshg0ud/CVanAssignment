@@ -15,3 +15,27 @@ function calculate() {
         display.value = 'Error';
     }
 }
+
+document.addEventListener('keydown', function (event) {
+    if (/^[0-9]$/.test(event.key)) {
+        appendToDisplay(event.key);
+    }
+    
+    if (['+', '-', '*', '/'].includes(event.key)) {
+        appendToDisplay(event.key);
+    }
+    
+    if (event.key === 'Enter') {
+        calculate();
+    }
+    
+
+    if (event.key === 'Escape') {
+        clearDisplay();
+    }
+
+        
+    if (event.key === '.') {
+        appendToDisplay(event.key);
+    }
+});
