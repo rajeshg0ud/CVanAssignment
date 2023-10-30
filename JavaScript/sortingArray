@@ -5,7 +5,7 @@ const rl = readline.createInterface({
 });
 
 rl.question("Enter list of num's separated by comma: ", function(input) {
-      const arr = input.split(',').map(Number);
+      const arr = input.split(',').map(Number); 
 
     arr.sort(function(a, b) {
         return b - a;
